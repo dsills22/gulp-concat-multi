@@ -1,7 +1,7 @@
 
 ## Installation
 
-`npm install --save-dev gulp-concat-multi`
+`npm install --save-dev gulp-concat-multiple`
 
 ## Information
 
@@ -9,7 +9,7 @@ Shamelessly copied from gulp-concat and edited in order to output multiple files
 
 <table>
 <tr>
-<td>Package</td><td>gulp-concat-multi</td>
+<td>Package</td><td>gulp-concat-multiple</td>
 </tr>
 <tr>
 <td>Description</td>
@@ -24,7 +24,7 @@ Shamelessly copied from gulp-concat and edited in order to output multiple files
 ## Usage
 
 ```js
-var concat = require('gulp-concat-multi');
+var concat = require('gulp-concat-multiple');
 
 gulp.task('scripts', function() {
   return gulp.src('./lib/*.js')

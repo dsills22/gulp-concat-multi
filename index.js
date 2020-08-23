@@ -9,7 +9,7 @@ let Concat = require('concat-with-sourcemaps');
 // when a string it will construct a new one
 module.exports = function(file, opt) {
   if (!file) {
-    throw new Error('gulp-concat: Missing file option');
+    throw new Error('gulp-concat-multiple: Missing file option');
   }
   opt = opt || {};
   opt.files = opt.files || 1;
@@ -34,7 +34,7 @@ module.exports = function(file, opt) {
   } else if (typeof file.path === 'string') {
     fileName = path.basename(file.path);
   } else {
-    throw new Error('gulp-concat: Missing path in file options');
+    throw new Error('gulp-concat-multiple: Missing path in file options');
   }
 
   let parts = fileName.split(".");
@@ -50,7 +50,7 @@ module.exports = function(file, opt) {
 
     // we don't do streams (yet)
     if (file.isStream()) {
-      this.emit('error', new Error('gulp-concat: Streaming not supported'));
+      this.emit('error', new Error('gulp-concat-multiple: Streaming not supported'));
       cb();
       return;
     }
