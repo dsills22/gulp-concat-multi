@@ -105,7 +105,7 @@ module.exports = function(file, opt) {
       }
 
       if(!currJoinedFile) {
-        let newFileName = fileNameNoExt + opt.suffix + fileNum + "." + ext;
+        let newFileName = fileNameNoExt + opt.suffix + (fileNum + "").padStart(5, "0") + "." + ext;
         fileNum++;
         currConcat = new Concat(isUsingSourceMaps, newFileName, opt.newLine);
 
