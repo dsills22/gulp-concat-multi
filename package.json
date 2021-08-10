@@ -1,6 +1,6 @@
 {
   "name": "gulp-concat-multiple",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Concats files into N same/similar sized target files",
   "main": "index.js",
   "scripts": {
